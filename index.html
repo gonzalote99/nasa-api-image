@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link 
+   rel="icon"
+   type="image/png"
+  href="https://www.pngkey.com/png/full/194-1942885_rockets-logo-transparent-streetsboro-high-school-rockets.png"
+  >
+  <title>nasa api image</title>
+</head>
+<body>
+<div class="loader hidden">
+ <img src="https://raw.githubusercontent.com/MainakRepositor/Antarishk/36819e91b1d483ecda3b143c2aa69e9b4f181656/rocket.svg" alt="Rocket Loading Animation">
+ <h2>launching..</h2>
+
+
+</div>
+<div class="main-container">
+<div class="container">
+<div class="navigation-container">
+ <span class="background"></span>
+ <h3><center>nasa image</center></h3>
+ <p class="hh">made by <a href="https://github.com/gonzalote99" target="_blank">gonzlote99</a></p>
+ <span class="navigation-items" id="resultsNav">
+  <h3 class="clickable" onclick="updateDOM('favorites')">favorites</h3>
+  <h3 class="bullet">&nbsp;&nbsp;&nbsp;&nbsp;🚀 </h3>   
+   <h3 class="clickable" onclick="getNasaPictures()">load more</h3>
+ </span>
+ <span class="navigation-items hidden" id="favoritesNav">
+<h3 class="clickable" onclick="getNasaPictures()">load more nasa images</h3>
+
+
+ </span>
+
+</div>
+
+</div>
+<div class="images-container"></div>
+<div class="save-confirmed" hidden>
+<h2 class="added">Added</h2>
+</div>
+
+
+</div>
+<script src="script.js"></script>
+  
+</body>
+</html>
